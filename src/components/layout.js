@@ -12,7 +12,7 @@ const MainLayout = styled.main`
   min-height: 80vh;
   justify-items: center;
   align-items: center;
-  margin: 1rem 0;
+  margin: 1rem auto;
   padding: 1rem;
 `
 

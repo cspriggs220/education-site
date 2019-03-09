@@ -1,6 +1,7 @@
 import React from 'react'
 import Layout from '../components/layout'
 import styled from 'styled-components'
+import '../scss/_main.scss'
 
 const Button = styled.a`
   color: #524763;
@@ -15,17 +16,17 @@ const Button = styled.a`
 
 const IndexPage = ({ location }) => (
   <Layout location={location}>
-    <div>
-      <h1>Education Home</h1>
+    <section class="Main">
+      <h1 class="Main-heading">Education Home</h1>
       <p>
         Stay tuned for more details about our services provided for Summer '19!
       </p>
       <p>
-        In the meantime, for one-on-one training availability, email me using
+        In the meantime, for one-on-one training availability, contact me using
         the button below.
       </p>
-    </div>
-    <Button href="mailto:spriggs.grace@gmail.com">Email Us</Button>
+    </section>
+    <Button href="mailto:spriggs.grace@gmail.com">Email Grace</Button>
   </Layout>
 )
 

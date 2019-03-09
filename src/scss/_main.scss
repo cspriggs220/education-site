@@ -1,0 +1,7 @@
+@import './base/variables';
+
+.Main {
+  &-heading {
+    color: $color-primary;
+  }
+}
