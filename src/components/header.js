@@ -5,29 +5,27 @@ import styled from 'styled-components'
 
 const HeaderWrapper = styled.div`
   background: #524763;
-  img {
-    margin-bottom: 0;
+  a {
+    color: white;
+    text-shadow: none;
+    background-image: none;
+
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+    }
   }
 `
 
 const HeaderContainer = styled.div`
   margin: 0 auto;
-  max-width: 960px;
   padding: 1rem;
 `
 
 const Header = ({ siteTitle }) => (
   <HeaderWrapper>
     <HeaderContainer>
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        />
-      </h1>
+      <Link to="/">home</Link>
     </HeaderContainer>
   </HeaderWrapper>
 )

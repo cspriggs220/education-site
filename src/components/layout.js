@@ -7,11 +7,13 @@ import Header from './header'
 import './layout.css'
 
 const MainLayout = styled.main`
-  max-width: 90%;
-  margin: 1rem auto;
-  display: grid;
-  grid-template-columns: 3fr 1fr;
-  grid-gap: 40px;
+  display: flex;
+  width: 50vh;
+  min-height: 80vh;
+  justify-items: center;
+  align-items: center;
+  margin: 1rem 0;
+  padding: 1rem;
 `
 
 const Layout = ({ children, location }) => (
@@ -31,11 +33,6 @@ const Layout = ({ children, location }) => (
         <MainLayout>
           <div>{children}</div>
         </MainLayout>
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
       </>
     )}
   />
